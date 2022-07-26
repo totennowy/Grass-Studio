@@ -1,0 +1,28 @@
+.about {
+  width: 84%;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.about__title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #53686c;
+  padding-bottom: 30px;
+}
+
+.about__textbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.about__text {
+  line-height: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .about__textbox {
+    grid-template-columns: 1fr;
+  }
+}

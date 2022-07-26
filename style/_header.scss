@@ -1,0 +1,95 @@
+.header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(/assets/seacost.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  height: 760px;
+}
+
+.header__textbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 440px;
+  width: 36%;
+  margin-left: 56%;
+  margin-right: 8%;
+  position: relative;
+  top: 34%;
+  transform: translate(0, -35%);
+}
+
+.header__text-large {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 55px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.header__text-small {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.header__button {
+  font-size: 24px;
+  font-weight: 800;
+  background: transparent;
+  border-radius: 25px;
+  height: 55px;
+  width: 175px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: inset 0px 0px 0px #ffffff;
+  transition: 2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    box-shadow: inset 0px -300px 0px #ffffff;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__textbox {
+    width: 100%;
+    top: 28%;
+    transform: translate(0, -30%);
+    margin: 0px auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__text-large {
+    text-align: center;
+  }
+  .header__text-small {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__textbox {
+    width: 100%;
+    top: 15%;
+    transform: translate(0, -30%);
+    margin: 0px auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__text-large {
+    font-size: 40px;
+  }
+}

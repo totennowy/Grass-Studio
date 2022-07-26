@@ -1,0 +1,34 @@
+.gallery {
+  margin-top: 50px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+
+.gallery__img {
+  transition: 0.2s ease-in-out;
+  background-size: contain;
+  background: url();
+  object-fit: cover;
+  width: 100%;
+  height: 403px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
